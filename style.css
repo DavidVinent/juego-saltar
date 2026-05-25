@@ -20,7 +20,6 @@
 .minovia{
    
     background-image: url('./Guy.png');
-    background-size: 160px 214px;  
     height: 689px;
     width: 160px;
     position: absolute;
@@ -30,20 +29,18 @@
 
 .gris{
     background-image: url('./Goomba.png');
-    background-size: 164px 214px;
     background-repeat: no-repeat;  
-    height: 214px;
-    width: 164px;
+    height: 160px;
+    width: 120px;
     position: absolute;
     bottom: 0;
 }
 
 .super{
     background-image: url('./1hp.png');
-    background-size: 164px 214px;
     background-repeat: no-repeat;  
-    height: 214px;
-    width: 164px;
+    height: 160px;
+    width: 120px;
     position: absolute;
     bottom: 0;
 }
