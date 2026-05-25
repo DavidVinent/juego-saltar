@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const minovia = document.querySelector('.minovia')
+    const minovia = document.querySelector('.starwarstoguapo.avif')
     const grid = document.querySelector('.grid')
 
     let gravedad = 0.9;
     let Esculturasdebotero = false;
-    let isgayover = false;
+    let gameover = false;
     let puntuacion = 0;
     let vidas = 3;
     let pausado = false;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 reanudar(); 
                 return;
             }
-            if (!Esculturasdebotero && !isgayover) {
+            if (!Esculturasdebotero && !gameover) {
                 jump();
             }
         }
