@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const minovia = document.querySelector('.starwarstoguapo.avif')
+    const minovia = document.querySelector('.Guy.png')
     const grid = document.querySelector('.grid')
 
     let gravedad = 0.9;
@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function trans() {
-        minovia.style.backgroundImage = "url('./')"
+        minovia.style.backgroundImage = "url('./rico huevo.png')"
         minovia.style.height = '180px'
     }
 
     function humanizar() {
-        minovia.style.backgroundImage = "url('./sonic.png')"
-        minovia.style.height = '200px'
+        minovia.style.backgroundImage = "url('./Guy.png')"
+        minovia.style.height = '689px'
     }
 
     function actualizar() {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (vidas <= 0) {
     
-            isgayover = true;
+            gameover = true;
             while (grid.firstChild) {
                 grid.removeChild(grid.lastChild);
             }
@@ -112,12 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (msg) msg.remove();
 
        
-        GenOBs();
-        GenOBj();
+        Obj1();
+        Obj2();
     }
 
-    function GenOBs() {
-        if (isgayover || pausado) return;
+    function Obj1() {
+        if (gameover || pausado) return;
 
         let posicio = 1800;
         let ramdomTime = Math.random() * 3000;
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(obs);
 
         let mueve = setInterval(function () {
-            if (pausado || isgayover) { 
+            if (pausado || gameover) { 
                 clearInterval(mueve);
                 obs.remove();
                 return;
@@ -150,11 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 20)
 
-        setTimeout(GenOBs, ramdomTime);
+        setTimeout(Obj1, ramdomTime);
     }
 
-    function GenOBj() {
-        if (isgayover || pausado) return;
+    function Obj2() {
+        if (gameover || pausado) return;
 
         let posicio = 1800;
         let ramdomTime = Math.random() * 3000;
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(obj);
 
         let mueve = setInterval(function () {
-            if (isgayover || pausado) { 
+            if (gameover || pausado) { 
                 clearInterval(mueve);
                 obj.remove();
                 return;
@@ -190,12 +190,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 20)
 
-        setTimeout(GenOBj, ramdomTime);
+        setTimeout(Obj2, ramdomTime);
     }
 
     actualizar();
-    GenOBj();
-    GenOBs();
+    Obj2();
+    Obj1();
 
     document.addEventListener('keydown', control);
 })
