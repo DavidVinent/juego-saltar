@@ -1,0 +1,65 @@
+
+@keyframes QQQ {
+    from{
+        background-position: 7000%;
+    } to {
+        background-position: 0%;
+    }
+    
+}
+
+#paisatge{
+    position: absolute;
+    background-image: url('minovia.png');
+    background-size: 2000px 1000px;
+    
+    height: 100%;
+    width: 100%;
+    animation: QQQ 600s infinite linear
+}
+.minovia{
+   
+    background-image: url('./sonic.png');
+    background-size: 160px 214px;  
+    height: 214px;
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 50px; 
+}
+
+.gris{
+    background-image: url('./pinchos.png');
+    background-size: 164px 214px;
+    background-repeat: no-repeat;  
+    height: 214px;
+    width: 164px;
+    position: absolute;
+    bottom: 0;
+}
+
+.super{
+    background-image: url('./Ring8.webp');
+    background-size: 164px 214px;
+    background-repeat: no-repeat;  
+    height: 214px;
+    width: 164px;
+    position: absolute;
+    bottom: 0;
+}
+.puntuacion {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+}
+.vidas {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    z-index: 10;
+}
