@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const minovia = document.querySelector('.minovia.png')
+    const minovia = document.querySelector('.minovia')
     const grid = document.querySelector('.grid')
 
     let gravedad = 0.9;
