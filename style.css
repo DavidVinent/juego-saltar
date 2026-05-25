@@ -10,7 +10,7 @@
 
 #paisatge{
     position: absolute;
-    background-image: url('minovia.png');
+    background-image: url('starwarstoguapo.png');
     background-size: 2000px 1000px;
     
     height: 100%;
@@ -19,7 +19,7 @@
 }
 .minovia{
    
-    background-image: url('./sonic.png');
+    background-image: url('./Guy.png');
     background-size: 160px 214px;  
     height: 214px;
     width: 160px;
@@ -29,7 +29,7 @@
 }
 
 .gris{
-    background-image: url('./pinchos.png');
+    background-image: url('./Goomba.png');
     background-size: 164px 214px;
     background-repeat: no-repeat;  
     height: 214px;
@@ -39,7 +39,7 @@
 }
 
 .super{
-    background-image: url('./Ring8.webp');
+    background-image: url('./1hp.png');
     background-size: 164px 214px;
     background-repeat: no-repeat;  
     height: 214px;
