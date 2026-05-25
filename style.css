@@ -20,6 +20,7 @@
 .minovia{
    
     background-image: url('./Guy.png');
+    background-repeat: no-repeat;  
     height: 689px;
     width: 160px;
     position: absolute;
